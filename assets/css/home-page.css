@@ -1,0 +1,424 @@
+/*Common*/
+.home-safecash{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+.form-mobile{
+    display: none;
+}
+.form-mobile .logo{
+    background: #428BCA;
+}
+.form-mobile .logo img{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+    padding: 15% 0;
+}
+.form-mobile .btn-choose{
+    padding:  10% 0;
+}
+.form-mobile .border-or{
+    position: relative;
+    height: 50px;
+}
+.form-mobile .border-or p{
+    border-top:1px solid #ddd ;
+    margin: 27px 28% 0;
+}
+.form-mobile .border-or p label{
+    position: absolute;
+    top: 17px;
+    background: #fff;
+    padding: 0 4px;
+    color: #777;
+    left: 48%;
+}
+.form-mobile button.btn{
+    width: 70%;
+    padding: 6px 15px;
+    font-size: 15pt;
+}
+.btn-sign-up.btn-primary{
+    background-color: #55A226;
+    border-color: #55A226;
+}
+.btn-sign-up.btn-primary:hover{
+    background-color: #66B933;
+}
+/*==========*/
+.home-page header{
+    background: #286FBF;
+}
+.home-page header img{
+    width: 100%;
+    min-width: 140px;
+    max-width: 210px;
+    margin-top: 24px;
+}
+.home-page header .login-form{
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0 5px;
+}
+.home-page header .login-form .col-sm-6{
+    margin-right: 10px;
+}
+.home-page header .login-form input{
+    margin-bottom: 5px;
+}
+.home-page header label,
+.home-page header .foget-psd{
+    color: #fff;
+    font-weight: normal;
+    vertical-align: top;
+}
+/*Main content*/
+.main-content{
+
+}
+.main-content .slide-1{
+    position: relative;
+    background: ghostwhite;
+}
+.main-content .slide-1 .form-active{
+    position: absolute;
+    right: 10%;
+    top: 10%
+}
+.main-content .slide-1 #content-slide1{
+    float: right;
+}
+.slide-1 .img-slide1{
+    width: 100%;
+}
+.slide-1 #sign_up_form{
+    padding: 20px;
+}
+.slide-1 h2{
+    font-size: 26pt;
+    font-weight: bold;
+}
+.slide-1 h2 img{
+    width: 100%;
+    max-width: 120px;
+    height: 35px;
+    margin-top: -13px;
+}
+.slide-1 p.p1-line{
+    font-size: 15pt;
+    margin: 0;
+    font-weight: 600;
+}
+.slide-1 p.p2-line{
+    font-size: 12pt;
+    margin: 0;
+    padding: 0 15px;
+}
+.slide-1 .btn-sign-up{
+    margin-top: 5%;
+}
+.slide-1 #sign_up_form .col-sm-6 input{
+    width: 95%;
+}
+.slide-1 .btn-sign-up a{
+    background-color: #55A226;
+    padding: 0 40px;
+    height: 40px;
+    line-height: 40px;
+    border-color: #55A226;
+}
+.slide-1 .btn-sign-up a:hover{
+    background-color: #66B933;
+}
+/*===========*/
+/*Slide 2*/
+.slide-2{
+    background: url("../images/pages/home-page/bg-slide2.png" ) repeat;
+    height: 140px;
+}
+.slide-2 ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 53px;
+}
+.slide-2 ul li{
+    float: left;
+    display: block;
+    padding: 5px 13px;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    text-transform: uppercase;
+    background: #fff;
+}
+.slide-2 ul li a{
+    color: #333333;
+    font-weight: 600;
+}
+.slide-2 ul li:hover a{
+    color: #faa115;
+}
+/*=========*/
+
+/* slide 3*/
+.slide-3 h2{
+    font-size: 33pt;
+    margin-top: 20%;
+}
+.slide-3 p{
+    font-size: 13pt;
+    margin: 0;
+}
+.video-thumb {
+    position: relative;
+    padding-bottom: 50.25%;
+    padding-top: 25px;
+    height: 0;
+    border: 6px solid #000;
+    margin: 4em 0px;
+}
+.video-thumb iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*=========*/
+
+/*Slide 4*/
+.slide-4{background: #faa115;padding: 10px 0;}
+.slide-4 ul li{color: #fff;margin: 15px 0;display: block}
+.slide-4 ul li img{width: 100%;max-width: 150px;}
+.slide-4 ul li h3{
+    font-size: 17pt;
+    font-weight: bold;
+}
+.slide-4 ul li p{
+    margin: 0;
+    line-height: 24px;
+    font-size: 10pt;
+}
+/*========*/
+/*Slide 5, slide 5*/
+.content-slides p {line-height: 24px; font-size: 13pt}
+.content-slides p span{
+    font-size: 35pt;
+}
+.content-slides ul{padding-left: 5%}
+.content-slides ul li{
+    background: url("../images/pages/home-page/icon-point.png") no-repeat 0 3px;
+    line-height: 25px;
+    font-size: 13pt;
+    padding: 0 0 0 24px;
+    display: block;
+}
+
+/*============*/
+/*Common*/
+.remember-me.mobile,
+.show-linkS{
+    display: none;
+}
+.img-slide img{width: 100%}
+.text-center{text-align: center}
+.text-left{text-align: left}
+.text-right{text-align: right}
+/*========*/
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .main-content .slide-1 .form-active{right: 5%}
+    .slide-1 #sign_up_form{padding: 10px 0}
+    .slide-1 h2{font-size: 20pt;}
+    .slide-1 h2 img {max-width: 110px;}
+    .slide-1 p.p1-line{font-size: 13pt;}
+    .slide-1 p.p2-line{font-size: 11pt;}
+}
+
+@media only screen and (max-width: 980px) {
+    .slide-3 h2{
+        font-size: 25pt;
+    }
+    .slide-3 p{font-size: 12pt}
+    .video-thumb{
+        margin: 2em 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 780px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 736px) {
+    .home-page header label{
+        color: #333;
+    }
+    .home-page header .foget-psd{
+        color: #0E76BC;
+    }
+    .main-content .slide-1.signUpForm,
+    .home-page header{
+        visibility: hidden;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        height: 0;
+        overflow: hidden;
+        left: -100%;
+        position: absolute;
+    }
+    .main-content .slide-1.signUpForm.active,
+    .home-page header.active{
+        background: #fff;
+        position: absolute;
+        z-index: 9;
+        left:0%;
+        height: auto;
+        width: 100%;
+        visibility: visible;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+    .remember-me{display: none}
+    .remember-me.mobile,
+    .form-mobile,
+    .show-linkS{
+        display: block;
+    }
+    .forgot-pwd{
+        margin-bottom: 20px;
+    }
+    .show-linkS{
+        border-top: 1px solid #ddd;
+    }
+    .show-linkS p{
+        padding: 15px 0;
+    }
+    .slide-1 #sign_up_form .col-sm-6 input {
+        width: 100%;
+    }
+    .home-page header.active .logo,
+    footer.footer,  .slide-1 .img-slide1,
+    .slide-2, .slide-3, .slide-5, .slide-4, .slide-6{
+        display: none;
+    }
+    .slide-1 .btn-sign-up a{
+        width: 30%;
+        color: #fff;
+        font-size: 20px;
+        min-width: 200px;
+    }
+
+    .slide-1 h2 {
+        font-size: 18pt;
+    }
+    .main-content .slide-1{padding: 5px 0}
+    .main-content .slide-1 #content-slide1{
+        width: 100%;
+    }
+    .main-content .slide-1 .form-active{
+        position: static;
+    }
+    .home-page header .login-form{
+        display: block;
+        justify-content: flex-end;
+    }
+    .home-page header .btn-login{
+        text-align: center;
+        padding: 0 8px;
+    }
+    .home-page header .btn-login button{
+        width: 30%;
+        background: #428BCA;
+        color: #fff;
+        font-size: 20px;
+        min-width: 200px;
+    }
+    /*Slide 2*/
+    .home-page .row .col.m6{width: 100%}
+    .slide-3 h2{margin-top: 5%; font-size: 30pt}
+
+    /*=========*/
+    /*Slide 4*/
+    .slide-4 ul.row .col.m4{width: 100%}
+    /*==========*/
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 600px) {
+    .slide-1 h2 img {max-width: 110px;}
+    .slide-1 p.p1-line{font-size: 13pt;}
+    .slide-1 p.p2-line{font-size: 11pt;}
+}
+
+@media only screen and (max-width: 568px) {
+}
+
+@media only screen and (max-width: 563px) {
+    .slide-3 h2{font-size: 25pt}
+}
+
+@media only screen and (max-width: 549px) {
+
+}
+
+@media only screen and (max-width: 534px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+    .slide-1 h2 {
+        font-size: 13pt;
+    }
+    .slide-1 h2 img {
+        max-width: 70px;
+        height: 19px;
+        margin-top: -7px;
+    }
+    .slide-1 p.p1-line {
+        font-size: 11pt;
+    }
+    .slide-1 p.p2-line {
+        font-size: 10pt;
+    }
+    .slide-1 .btn-sign-up a {
+        font-size: 18px;
+    }
+    .slide-3 h2{font-size: 21pt}
+    .slide-3 p{font-size: 11pt}
+}
+
+@media only screen and (max-width: 400px) {
+    .slide-2 ul li{
+        padding: 6px 8px;
+        margin: 5px 3px;
+        font-size: 9.5pt;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+
+}
+
+@media only screen and (max-width: 330px) {
+}
+
+@media only screen and (max-width: 320px) {
+
+}

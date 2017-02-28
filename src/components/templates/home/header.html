@@ -1,0 +1,32 @@
+<main-header>
+    <!-- Header-->
+    <header class="header-SC bg-header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="mobile-header ">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="" aria-expanded="false" onclick="showMenu()">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar color-custom"></span>
+                        <span class="icon-bar color-custom"></span>
+                        <span class="icon-bar color-custom"></span>
+                    </button>
+                    </div>
+                </div>
+                <div class="logo col-xs-4 col-xs-5">
+                    <a><img src="assets/images/pages/logo.png" /></a>
+                </div>
+                <div class="top-balance text-center col-xs-12 color-custom">
+                    <p><span class="hidden-xs">Balance:</span> 15,178 Flash</p>
+                </div>
+                <div class="header-right col-xs-12 col-sm-5 hidden-xs">
+                    <div class="avatar"><img src={avatarUrl} /></div>
+                    <div class="email-account color-custom">{userEmail}</div>
+                    <div class="btn-logout">
+                        <button class="btn btn-primary" onclick={onLogoutButtonClick}>Logout</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+</main-header>

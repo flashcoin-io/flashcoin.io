@@ -1,0 +1,250 @@
+<landing-page>
+    <div class="home-page home-safecash">
+        <div class="form-mobile">
+            <div class="form-group logo">
+                <img src="assets/images/pages/logo.png" />
+            </div>
+            <div class="form-group btn-choose col-xs-12">
+                <div class="col-xs-12 text-center">
+                    <button class="btn-sign-up btn btn-primary" onclick={onSignupButtonClick}>Sign Up</button>
+                </div>
+                <div class="col-xs-12 text-center border-or">
+                    <p class=""><label>Or</label></p>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <button class="btn btn-primary" onclick={onLoginButtonClick}>Login</button>
+                </div>
+            </div>
+        </div>
+        <header class="show-mobile loginForm">
+            <div class="container">
+                <div class="col-xs-12 col-sm-5 logo">
+                    <img src="assets/images/pages/logo.png" />
+                </div>
+                <div class="col-xs-12 col-sm-7 login-form">
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="text" class="validate form-control login-email" placeholder="Enter your email" tabindex="1">
+                        <div class="remember-me">
+                            <input type="checkbox" class="filled-in with-gap remember-me-checkbox" onchange="{onRememberMeCheckBoxChange}" />
+                            <label> Keep me logged in</label>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <input type="password" class="form-control login-password" placeholder="Password" tabindex="2">
+                        <div class="remember-me mobile">
+                            <input type="checkbox" class="filled-in with-gap remember-me-checkbox" onchange="{onRememberMeCheckBoxChange}" />
+                            <label> Keep me logged in</label>
+                        </div>
+                        <div class="forgot-pwd">
+                            <a class="foget-psd" href="#"> Forgot password</a>
+                        </div>
+                    </div>
+                    <div class="btn-login form-group">
+                        <button class="btn btn-default" onclick={onLoginButtonClick} tabindex="3">Login</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 show-linkS text-center">
+                    <p class="sign-upF">New here? <a class="back-signUp" href="#" onclick="backSignUp()">Sign Up</a></p>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="slide-1 signUpForm">
+                <img class="img-slide1" src="assets/images/pages/home-page/image-slide1.jpg">
+                <div class="container form-active">
+                    <div class="content-su row">
+                        <div class="col-xs-12 col-sm-7 text-center" id="content-slide1">
+                            <h2 class="">Get 10,000 FREE<img src="assets/images/pages/home-page/logo_Flash_v1.png">Tokens *</h2>
+                            <p class="p1-line">Share with Friends. Reward Virtue.</p>
+                            <p class="p1-line">Earn and Spend.</p>
+                            <div style="display:none" id="notify-check">
+                                <div class="ui center aligned segment">
+                                    <p>We sent you an email with a link to activate your account</p>
+                                    <p>Please check your email inbox/spam folder</p>
+                                </div>
+                            </div>
+                            <div class="box-signup" id="box-signup">
+                                <form id="sign_up_form" class="col-xs-12">
+                                    <div class="form-group col-xs-12 col-sm-6">
+                                        <input class="form-control" type="text" id="fullname" maxlength="50" name="fullname" placeholder="Full name">
+                                        <span id="usernameValidationText" style="display:none;"></span>
+                                    </div>
+                                    <div class="form-group col-xs-12 col-sm-6">
+                                        <input class="form-control" type="email" id="email-signup" placeholder="Enter email">
+                                    </div>
+                                </form>
+                                <p class="p2-line">By clicking Sign Up, I agree to the <a tabindex="8" href="/terms-of-use.html" target="_blank">Terms of Use</a>                                    and <a tabindex="9" href="/privacy-policy.html" target="_blank">Privacy Policy.</a></p>
+                                <p class="p2-line">* Each person or entity can have up to three accounts. </p>
+                                <div class="btn-sign-up form-group"> <a class="btn btn-primary">Sign Up</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 show-linkS text-center">
+                        <p class="loginF">New here? <a class="back-login" href="#" onclick="backLogin()">Login</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-2">
+                <div class="container">
+                    <ul>
+                        <li><a href="#merchants">Merchants</a></li>
+                        <li><a href="#banks">Banks</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide-3">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-6">
+                        <h2>What is Safe Cash?</h2>
+                        <p>Safe Cash technology powers banks, merchants and consumers.</p>
+                        <p>Instantly send and receive money and tokens worldwide.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <figure class="video-thumb">
+                            <iframe src="https://player.vimeo.com/video/155622096" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                                allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-4">
+                <div class="container">
+                    <ul class="">
+                        <li class="col-xs-12 col-sm-4 text-center">
+                            <img src="assets/images/pages/home-page/icon1.png">
+                            <h3>With you Everywhere</h3>
+                            <p>The Safe Cash wallet works with</p>
+                            <p>most browsers, iOS and Android,</p>
+                            <p>anywhere there's Internet.</p>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 text-center">
+                            <img src="assets/images/pages/home-page/icon2.png">
+                            <h3>Secure & Instant</h3>
+                            <p>State of the art blockchain</p>
+                            <p>technology secures your wallet and</p>
+                            <p>transactions. Your transaction is</p>
+                            <p>finalized in less than 5 seconds.</p>
+                        </li>
+                        <li class="col-xs-12 col-sm-4 text-center">
+                            <img src="assets/images/pages/home-page/icon3.png">
+                            <h3>Certified Funds</h3>
+                            <p>Once confirmed, there's no</p>
+                            <p>way to undo a transaction and</p>
+                            <p>the money is yours!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="merchants" class="slide-5">
+                <div class="img-slide form-group">
+                    <img src="assets/images/pages/home-page/image-slide2.jpg">
+                </div>
+                <div class="container">
+                    <div class="content content-slides">
+                        <p><span>S</span>afe Cash offers merchants increased business and profits from our unique and secure
+                            payment system. Process cash payments faster than most payment systems (in less than 5 seconds)
+                            with greater security and immediate settlement. Because Safe Cash functions a lot like cash,
+                            there are no chargebacks, bounced checks or other problems collecting your money. When you get
+                            the confirmed message after a few seconds, the money is yours!</p>
+                        <p>- One-click shopping</p>
+                        <p>- Analytics</p>
+                        <p>- Customer Acquisition</p>
+                        <p>- Customer Retention</p>
+                        <p>Today’s businesses need to be able to serve customers anywhere, whether they are on a mobile phone,
+                            computer, at your store front or anywhere in the world. Safe Cash works wherever the consumer
+                            and merchant have a computer or mobile device connected to the Internet.</p>
+                        <p>Merchants enjoy substantial benefits:</p>
+                        <ul>
+                            <li><span>Private.</span> Safe Cash offers much better privacy than most other payments systems.</li>
+                            <li><span>Secure.</span> Only you have your secret codes. No customer payment information is stored.
+                                Your customer’s payment information stays secure with your customer.</li>
+                            <li><span>No special hardware required.</span> Use any mobile phone, laptop or desktop computer.
+                                No terminal required.</li>
+                            <li><span>Use any web browser.</span> Windows, Mac, Linux, iOS or Android, Chrome, Firefox, Safari,
+                                etc.</li>
+                            <li><span>Works for online businesses.</span> Tool set to include Safe Cash payments in your normal
+                                online payment flow.</li>
+                            <li><span>Supports retail point of sale business.</span> No terminal required. Just print out your
+                                QR code and you are ready to take.</li>
+                            <li><span>Fast approval.</span> No credit or background checks, you just need a bank account and
+                                ID.</li>
+                            <li><span>Low transaction fees.</span> Cheaper than credit or most debit cards.</li>
+                            <li><span>Immediate settlement.</span> Why wait overnight or a few days for your money?</li>
+                            <li><span>No reserve or hold back account.</span> The money is yours within seconds.</li>
+                            <li><span>No chargebacks.</span> You deal directly with your customer and set your company policies.</li>
+                            <li><span>Works worldwide.</span> Send money anywhere that has Internet and computers, which is everywhere.
+                                Take your business global.</li>
+                            <li><span>No cash handling costs.</span> It’s already in your account. You don’t need to count it,
+                                hire a security guard or armored car, drive it to the bank or make a deposit.</li>
+                            <li><span>Lower employee theft.</span> Money comes in, but you have to approve money that goes out.</li>
+                        </ul>
+                        <p>Safe Cash is great for merchants with customers who value privacy and security, as well as those
+                            doing business internationally. It’s perfect for businesses that accept cash and can save substantial
+                            amounts compared to traditional credit card payment systems. If you would like to get more information
+                            about how to start benefiting from Safe Cash, please contact your local Safe Cash enabled bank
+                            or <a>contact@safe.cash</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="banks" class="slide-6">
+                <div class="img-slide form-group">
+                    <img src="assets/images/pages/home-page/image-slide3.jpg">
+                </div>
+                <div class="container">
+                    <div class="content content-slides">
+                        <p><span>S</span>afe Cash offers banks and other licensed money businesses new profit potential from
+                            a unique and secure business model that will add to assets, create valuable services and generate
+                            new customers using the Safe Cash Suite:</p>
+                        <p>- Tokenization and Digital Wallet</p>
+                        <p>- Analytics</p>
+                        <p>- Customer Acquisition</p>
+                        <p>- Customer Retention</p>
+                        <p>We use the latest secure digital payment technology to provide utility and security far beyond that
+                            offered by current payment networks. Our tokenization system offers true end to end security
+                            with high throughput and efficiency. Designed to work with your current banking infrastructure,
+                            it transforms a standard demand deposit account into a secure digital cash account with worldwide
+                            utility.</p>
+                        <p>Bank customers make a deposit and the bank issues tokens; the funds remain on the bank’s balance
+                            sheet. Tokens are circulated between consumers, merchants and licensed money businesses.</p>
+                        <p>The Safe Cash Suite offers many benefits to banks:</p>
+                        <ul>
+                            <li><span>Acquire new customers.</span></li>
+                            <li><span>Enables new business models and revenue streams.</span> Rapidly develop web tools for specific
+                                use cases with REST API's</li>
+                            <li><span>Integrates with your existing platform</span></li>
+                            <li><span>Digital cash​.</span> Send electronically with computers, tablets or mobile devices. Settlement
+                                for tens of thousands of transactions per second in under five seconds</li>
+                            <li><span>Tokens are fully collateralized​.</span></li>
+                            <li><span>Increase your assets​.</span> Keeping the cash in the bank improves your balance sheet.
+                                Today, when your customer makes a cash withdrawal, the cash leaves your bank and it’s gone.
+                                With Safe Cash, the cash stays in your bank, earning interest and protecting your shareholders
+                                and customers.</li>
+                            <li><span>Security​.</span> State of the art encryption and high-performance blockchain technology
+                                secures each token and wallet.</li>
+                            <li><span>Merchant acquisition.</span> Provides useful analytics and tools that allow the merchant
+                                to communicate directly with their customer, increasing sales and transaction fees.</li>
+                            <li><span>Permanent, cryptographically secure audit trail​.</span> Using the latest blockchain technology,
+                                a permanent and immutable electronic record is created and automatically backed up in multiple
+                                locations. Records are kept of every transaction enabling real time compliance</li>
+                        </ul>
+                        <p>To learn more about Safe Cash for your financial institution, please contact <a>chris@safe.cash </a>                            or <a>vuk@safe.cash.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer col-xs-12">
+            <div class="container text-center">
+                <ul>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="terms-of-use.html" target="_blank">Terms of Use</a></li>
+                    <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="legal.html" target="_blank">Legal</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+                <p>Copyright (c) 2015-2016 Safe Cash Payment Technologies, Inc. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</landing-page>

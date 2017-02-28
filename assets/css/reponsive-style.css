@@ -1,0 +1,512 @@
+/*Media Responsive*/
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 980px) {
+    .header-SC .header-right{
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: auto !important;
+    }
+    .listItems .item{
+        max-width: auto;
+    }
+    .myaccount-page .avatar #file {
+        font-size: 9.5pt;
+    }
+    .table-responsive table td p.ellipsis-name {
+        /*width: 135px;*/
+    }
+    .table-responsive table td p.ellipsis-email{
+        /*max-width: 175px;*/
+    }
+    .header-SC .header-right .email-account{
+        max-width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .slide-4 ul li h3 {
+        font-size: 15pt;
+    }
+    .slide-4 ul li p {
+        font-size: 10pt;
+    }
+    .table-responsive table td p.ellipsis-name,
+    .table-responsive table td p.ellipsis-email{
+       max-width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    /*Wiki pages*/
+    ul.desktop-menu{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 28px;
+    }
+    .navbar-default .desktop-menu.navbar-nav>li>a{
+        color: #FFF;
+        font-size: 13px;
+        padding: 10px;
+        font-weight:600;
+    }
+    .navbar-default .desktop-menu.navbar-nav>li>a:hover,
+    .navbar-default .desktop-menu.navbar-nav>li>a:focus{
+        color: #FFC922;
+    }
+
+}
+@media only screen and (max-width: 767px){
+    /*Common Page*/
+    .listItems{
+        min-height: 60px;
+    }
+    .bg-mobile{
+        background: url("../images/splash2.png") no-repeat;
+        background-size: 100%;
+    }
+    #main{
+        box-shadow: none;
+      background: #f9f9f9;
+          height: 100vh;
+    }
+    .navbar-sc ul li a .orange-circle{
+        position: static;
+        margin-left: 10px;
+    }
+    .hidden-mobile{display:none;}
+    .date-activity-form,
+    .date-pending-form{
+        position: static;
+        z-index: 100;
+        background: #fff;
+        padding: 8px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 1px 5px #ccc;
+        border-radius: 4px;
+        top: 20px;
+    }
+    .table>thead>tr>th, .table>tbody>tr>th,
+     .table>tfoot>tr>th, .table>thead>tr>td,
+     .table>tbody>tr>td, .table>tfoot>tr>td {
+        padding: 8px 15px !important;
+        line-height: 25px;
+    }
+    .pending-page table td p.amount{
+        font-size: 12pt;
+        line-height: 40px;
+    }
+    .table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th{
+        background-color: #F1F1F1;
+    }
+    .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th{
+        background: #fff;
+    }
+    .main-container .main-content{
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        background: #fff;
+    }
+    .modal-dialog {
+        width: auto;
+    }
+    .modal-body .wallet-name {
+        max-width: 200px;
+    }
+    #confirm-send-money .modal-dialog,
+    #confirm-send-money .modal-dialog{
+            width: 80%;
+    }
+    .btn-control{
+        float: right;
+    }
+    .myaccount-page .main-content{
+        background: #fff;
+    }
+    /*============*/
+    .header-SC{
+        height: 55px;
+        margin: 0;
+        line-height: 55px;
+        position:relative;
+    }
+    .header-SC .navbar-toggle{
+        padding: 5px 6px;
+        margin-top: 15px;
+    }
+    .header-SC .navbar-default{
+        max-height: 55px;
+    }
+    .header-SC .navbar{
+        line-height: 57px;
+        padding: 0 15px;
+        margin: 0;
+        height: 57px;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;
+    }
+    .header-SC .top-balance {
+        position: absolute;
+        width: auto;
+        white-space: nowrap;
+        margin-left: 0;
+        text-align: right;
+        right: 0;
+    }
+    .navbar-sc.active{
+        margin-left: 0;
+        visibility: visible;
+        -webkit-transition-duration: 0.5s; /* Safari */
+        transition-duration: 0.5s;
+
+    }
+    .navbar-sc .account{
+        padding: 17px 15px 10px;
+        border-bottom: 1px solid #ccc;
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;
+    line-height: 40px;
+    }
+    .navbar-sc{
+        position: fixed;
+        width:265px;
+        top: -7px;
+        background: none;
+        bottom: 0;
+        background: #fff;
+        border-right: 1px solid #ccc;
+        visibility: hidden;
+        margin-left: -266px;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        overflow: auto;
+    }
+    .navbar-sc .container{
+        padding: 0;
+    }
+    .overlay-screen{
+        position: fixed;
+        top: 0;
+        right: 0%;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.36);
+        display: none;
+        z-index: 9;
+    }
+    .navbar-sc .navbar-nav{
+        margin: 0;
+        margin-left: -1px;
+    }
+    .navbar-sc ul li a{
+        background: #fff;
+        color: #444;
+        border-bottom: 1px solid #EDEDED;
+        padding: 15px 15px;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    .navbar-sc ul li.active a {
+        /*background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #72C6FF), color-stop(1, #419EE5) );*/
+        /*background: -moz-linear-gradient( center top, #72C6FF 5%, #419EE5 100% );*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72C6FF', endColorstr='#419EE5');*/
+        /*background-color: #1e62d0;*/
+        background-color: #519EE0;
+        color: #fff;
+    }
+    .navbar-sc ul li a:hover, .navbar-sc ul li a:focus{
+        color: #fff;
+        /*background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #72C6FF), color-stop(1, #419EE5) );*/
+        /*background: -moz-linear-gradient( center top, #72C6FF 5%, #419EE5 100% );*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72C6FF', endColorstr='#419EE5');*/
+        background-color: #519EE0;
+    }
+    .navbar-sc li.logout{
+        display:block;
+        border-bottom: 1px solid #ccc;        
+    }
+    .table-responsive table{
+        border: none;
+    }
+    .table-responsive{
+        border: none;
+        overflow: auto;
+        background: #fff;  
+        border-bottom: 1px solid #ccc;      
+    }
+    .myaccount-page  .table-responsive{
+        border-bottom: none;
+    }
+    .myaccount-page .fountain-content .form-input input{width: 100%}
+    .myaccount-page .avatar #file {
+        font-size: 10.5pt;
+    }
+    .table-responsive table td p.ellipsis-name{
+        font-weight: 600;
+    }
+    .table-responsive table td p.ellipsis-email{
+        font-size: 10pt;
+    }
+    .table-responsive table td p.ellipsis-name, .table-responsive table td p.ellipsis-email {
+        max-width: 100%;
+            line-height: 19px;
+    }
+    /*Wiki pages*/
+    .header-SC .header-right{
+        position: absolute;
+        left: -15px;
+        z-index: 100;
+        top: 35px;
+        display: block;
+        width: 200px;
+    }
+    ul.desktop-menu{
+        width: 200px;
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: 0px 1px 9px #888;
+        border-radius: 4px;
+    }
+}
+@media only screen and (max-width: 736px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 600px) {
+    .date-activity-form, .date-pending-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+
+}
+
+@media only screen and (max-width: 563px) {
+
+}
+
+@media only screen and (max-width: 549px) {
+    .title-page h2.title{
+        font-size: 14pt;
+    }
+    .pagination{
+        font-size: 13px;
+    }
+    .tab-mobile{display: block;}
+    .hidden-small{display: none}
+    .nav-pills>li {
+        width: 33.333333333333333%;
+    }
+
+    .pending-page .nav-pills>li{
+        width: 50%;
+    }
+    #profile .container{padding: 0 5px;}
+    .myaccount-page .nav-pills>li{
+        width: 25%;
+    }
+    .myaccount-page .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 5px;
+    }
+    .transaction-detail .table>tbody>tr>td{
+        padding: 8px 4px !important;
+    }
+    .modal-body textarea {
+        min-height: 80px;
+        resize: none;
+    }
+   /* .nav-tabs-responsive{
+        height: 42px;
+        overflow: hidden;
+    }
+    .nav-tabs-responsive > li {
+        display: none;
+        width: 23%;
+    }
+
+    .nav-tabs-responsive > li > a {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        width: 100%;
+        text-align: center;
+        vertical-align: top;
+        font-size: 10pt;
+    }
+
+    .nav-tabs-responsive > li.active {
+        width: 54%;
+    }
+
+    .nav-tabs-responsive > li.active:first-child {
+        margin-left: 23%;
+    }
+
+    .nav-tabs-responsive > li.active,
+    .nav-tabs-responsive > li.prev,
+    .nav-tabs-responsive > li.next {
+        display: block;
+    }
+
+    .nav-tabs-responsive > li.prev,
+    .nav-tabs-responsive > li.next {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    .nav-tabs-responsive > li.next > a,
+    .nav-tabs-responsive > li.prev > a {
+        -webkit-transition: none;
+        transition: none;
+    }
+    .nav-tabs-responsive > li.next > a .text,
+    .nav-tabs-responsive > li.prev > a .text {
+        display: none;
+    }
+
+    .nav-tabs-responsive > li.next > a:after {
+        content: "\e080";
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .nav-tabs-responsive > li.prev > a:after {
+        content: "\e079";
+        position: relative;
+        top: 2px;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }*/
+}
+
+@media only screen and (max-width: 534px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container{
+        margin:0;
+        background: #F9F9F9;
+    }
+    .amount-field{
+        width: 100%;
+    }
+    .pending-transaction-detail .listItems .name-item {
+        min-width: 75px;
+    }
+    .pending-transaction-detail .listItems .data-item .item p{
+        max-width: 200px;
+    }
+    .table-responsive table td p.ellipsis-name, .table-responsive table td p.ellipsis-email {
+       max-width: 200px;
+    }
+    footer ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        white-space: nowrap;
+    }
+    footer ul li{
+        margin: 1px 4px;
+    }
+    footer ul li a, footer ul li a:hover, footer ul li a:focus {
+        font-size: 12px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .myaccount-page .btn-fountain button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .modal-body .wallet-name {
+        max-width: 140px;
+    }
+    #confirm-send-money .modal-dialog,
+    #confirm-send-money .modal-dialog {
+        width: 91%;
+    }
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th,
+     .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+        padding: 8px 10px !important;
+    }
+      .table-responsive table td p.ellipsis-name, .table-responsive table td p.ellipsis-email {
+       max-width: 180px;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+
+    .pending-transaction-detail .listItems .data-item .item p{
+        max-width: 125px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .modal-body .wallet-name {
+        max-width: 115px;
+    }
+    .table-responsive table td p.ellipsis-name,
+    .table-responsive table td p.ellipsis-email {
+    max-width: 113px;
+    }
+    .transaction-activity .table-responsive table td p.ellipsis-name,
+    .transaction-activity .table-responsive table td p.ellipsis-email {
+    max-width: 160px;
+    }
+    .modal-body textarea._value_id{
+        height: 100px;
+        min-height: 100%;
+    }
+    .notifyjs-bootstrap-base{
+        white-space: normal !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+/*=====================*/

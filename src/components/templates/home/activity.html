@@ -1,0 +1,92 @@
+<home-activity>
+    <div class="container">
+        <div class="transaction-activity">
+            <div class="title-page">
+                <h2 class="title">Your Transaction Activity</h2>
+            </div>
+            <div class="date-time pull-left">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input id="fromDate" type='text' class="activity-from-date form-control"/>
+                            <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>To</label>
+
+                        <div class='input-group date' id='datetimepicker2'>
+                            <input id="toDate" type='text' class="activity-to-date form-control"/>
+                            <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group btn-control">
+                        <button type="button" class="btn btn-primary" onclick="{onShowButtonClick}">Show</button>
+                        <button type="button" class="btn btn-warning" onclick="{onShowAllButtonClick}">Show All Activity</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-12 main-content">
+                <div class="bs-action bs-action-tabs " role="tabpanel" data-example-id="togglable-tabs">
+                    <ul id="tabs-togglable" class="nav nav-pills nav-tabs-responsive" role="tablist">
+                        <li role="presentation" class="{active: tabItem.isActive}" each="{tabItem in tabs}">
+                            <a href="" role="tab" data-toggle="tab" onclick="{onTabItemClick}">
+                                <span class="text">{tabItem.name}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12">
+                    <div class="tab-pane fade in active" role="tabpanel" id="all-transaction" aria-labelledby="allT-tab">
+                        <h5 class="title-table">Payments Sent from {getDisplayDate(fromDateObject.current)} to {getDisplayDate(toDateObject.current)}</h5>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date/Time</th>
+                                        <th>Email</th>
+                                        <th>Name</th>
+                                        <th>Amount</th>
+                                        <th>Transaction Note</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr each="{txn in txns}">
+                                        <td>{getDisplayDate(txn.created_ts)}</td>
+                                        <td>{txn.type==2 ? txn.sender_email : txn.receiver_email}</td>
+                                        <td>{txn.type==2 ? sender_display_name : receiver_display_name}</td>
+                                        <td>{txn.amount}</td>
+                                        <td>{txn.memo}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" role="tabpanel" id="payment-received" aria-labelledby="recP-tab">
+                        <h5 class="title-table">Payments Sent from {getDisplayDate(fromDateObject.current)} to {getDisplayDate(toDateObject.current)}</h5>
+
+                        <div class="table-responsive">
+                            Crystal
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" role="tabpanel" id="payment-send" aria-labelledby="sendP-tab">
+                        <h5 class="title-table">Payments Sent from Mar 20 2016 to Apr 19 2016</h5>
+
+                        <div>
+                            Stella
+                        </div>
+
+                    </div>
+                </div>
+                <nav class="pagination-table col-xs-12">
+                    <ul class="uk-pagination txn-pagination"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</home-activity>
